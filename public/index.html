@@ -4,7 +4,7 @@
 <hr>
 <div id="result"></div>
 
-<script src="https://www.google.com/recaptcha/api.js?render=6Lem2ZMaAAAAALQy05xZelws-bmRkYjRjkt54JHA"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=<rc3-key>"></script>
 <script>
     function showResult(text) {
         document.querySelector('#result').innerHTML = text;
@@ -33,7 +33,7 @@
     }
 
     grecaptcha.ready(function() {
-        grecaptcha.execute('6Lem2ZMaAAAAALQy05xZelws-bmRkYjRjkt54JHA', {action: 'demo'})
+        grecaptcha.execute('<rc3-key', {action: 'demo'})
             .then(function(token) {
                 document.querySelector('#send_button').addEventListener('click', handleClick(token));
             });

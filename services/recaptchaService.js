@@ -1,7 +1,7 @@
 const axios = require('axios')
 
 const validate = async (token) => {
-    const secret_key = '6Lem2ZMaAAAAAEVJa0Exdt4LsX2Muz4pX7WIVOA0';
+    const secret_key = '<rc3-key';
     const url = `https://www.google.com/recaptcha/api/siteverify?secret=${secret_key}&response=${token}`;
 
     try {
